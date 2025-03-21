@@ -60,6 +60,33 @@ Then open your browser and navigate to http://localhost:3000
 
 Have fun!
 
+### [langmanus](https://github.com/langmanus/langmanus/blob/main/README_zh.md)
+
+```bash
+# Clone the repository
+git clone https://github.com/langmanus/langmanus.git
+cd langmanus
+
+# Install dependencies, uv will take care of the python interpreter and venv creation
+uv sync
+
+# Playwright install to use Chromium for browser-use by default
+uv run playwright install
+
+# Configure environment
+# Windows: copy .env.example .env
+cp .env.example .env
+# Edit .env with your API keys
+
+# Run the project
+uv run main.py
+```
+
+```bash
+# Start the API server
+uv run server.py
+```
+
 ## Project Statement
 
 This is an academically driven open-source project, developed by a group of former colleagues in our spare time. It aims to explore and exchange ideas in the fields of Multi-Agent and DeepResearch.
