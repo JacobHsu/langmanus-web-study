@@ -14,8 +14,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
-      <body className="min-w-screen flex min-h-screen bg-body">{children}</body>
+    <html lang="en" className={`${GeistSans.variable}`} suppressHydrationWarning>
+      <body className="min-w-screen flex min-h-screen bg-body" suppressHydrationWarning>{children}</body>
     </html>
   );
 }
